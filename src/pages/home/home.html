@@ -1,0 +1,48 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Barcode/QR Scanner</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="signup-background">
+  <ion-list class="item-block12">
+      <ion-item>
+          <ion-label>Scan your code</ion-label>
+        </ion-item><br>
+
+        
+      <ion-item>
+      <button ion-button (click)="scan()">Scan </button>
+      <div *ngIf="scanData">
+          <p>{{scanData}}</p>
+    
+      </div>
+    </ion-item><br>
+    <ion-item>
+      <ion-input  type="text" placeholder="Enter Barcode" class="loginpageborder log1 input12 form-control "
+        style="color: black !important">
+      </ion-input>
+
+    </ion-item><br>
+
+    <ion-item class="border1">
+      <ion-input  placeholder="Enter Name" class="loginpageborder log1"></ion-input>
+    </ion-item><br>
+
+    <ion-item class="border1">
+        <ion-input  type="text" placeholder="Enter Mobile No" class="loginpageborder log1"></ion-input>
+      </ion-item><br>
+
+    <div padding>
+      <button ion-button color="primary" block class="loginpageborder button-md-primary1">Submit</button>
+
+
+
+    </div>
+
+
+  </ion-list>
+</ion-content>
